@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // During development (Spring Boot running locally on port 8080)
-const API = "http://localhost:8080/notess";
+const API = process.env.REACT_APP_API_LINK;
 
 // CRUD methods
 export const getNotes = () => axios.get(API);
